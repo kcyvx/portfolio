@@ -62,19 +62,19 @@ export default function ContactForm() {
         <span className="p-1 px-3 rounded-full border border-dark text-muted text-sm text-center max-w-max m-auto">Me contacter</span>
       </div>
 
-      <div className='flex gap-12'>
-        <div className='w-full'>
-          <h2 className='text-4xl mt-7'>Me contacter</h2>
+      <div className='flex flex-col md:flex-row gap-8 md:gap-3'>
+        <div className='w-full md:w-1/2'>
+          <h2 className='text-4xl mt-18'>Me contacter</h2>
           <p className='mt-6 text-muted'>Brisez le plafond de verre qui vous empêche de vous démarquer, vous avez envie de me présenter un projet, ou simplement de dire bonjour ?, contactez moi via le formulaire de contact ou via mes différentes réseaux sociaux.</p>
 
           <div className='flex gap-3 mt-4'>
-            <a href='www.linkedin.com/in/thomas-galabert-55626a2a6' target='_blank' className='p-2 bg-background-light border border-color rounded-full text-secondary'><Linkedin size={15}/></a>
+            <a href='https://www.linkedin.com/in/thomas-galabert-55626a2a6' target='_blank' className='p-2 bg-background-light border border-color rounded-full text-secondary'><Linkedin size={15}/></a>
             <a href='https://github.com/kcyvx' target='_blank' className='p-2 bg-background-light border border-color rounded-full text-secondary'><Github size={15}/></a>
           </div>
         </div>
         
-        <div className="w-full relative">
-          <form onSubmit={handleSubmit} className="space-y-6 mt-6 relative p-6">
+        <div className="w-full md:w-1/2 relative">
+          <form onSubmit={handleSubmit} className="space-y-6 mt-6 relative md:p-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-muted mb-2">

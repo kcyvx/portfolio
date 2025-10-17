@@ -14,7 +14,7 @@ export default function Home() {
         <HeroSection />
         <Stacks />
         <Projects projects={featuredProjects} />
-        <div className="flex justify-center mt-6 mb-12">
+        <div className="flex justify-center mt-6 mb-24">
           <Link 
             href="/projects" 
             className="text-muted hover:text-primary transition-colors"
