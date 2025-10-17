@@ -4,7 +4,6 @@ import HeroSection from "./components/HeroSection";
 import Stacks from "./components/Stacks";
 import Projects from "./components/Projects";
 import { getFeaturedProjects } from "@/data/projects";
-import Stats from "./components/StatsSection";
 import Contact from "./components/ContactForm";
 export default function Home() {
   const featuredProjects = getFeaturedProjects(3);

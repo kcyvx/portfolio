@@ -39,7 +39,7 @@ export default function ContactForm() {
       } else {
         setStatus('error');
       }
-    } catch (error) {
+    } catch {
       setStatus('error');
     } finally {
       setLoading(false);
@@ -55,7 +55,7 @@ export default function ContactForm() {
       <div className='flex gap-12'>
         <div className='w-full'>
           <h2 className='text-4xl mt-7'>Me contacter</h2>
-          <p className='mt-6 text-muted'>Brisez le plafond de verre qui vous empeche de vous démarquer, vous avez envie de me présenter, ou simplement de dire bonjour ?, contactez moi via le formulaire de contact ou via mes différentes résausx sociaux.</p>
+          <p className='mt-6 text-muted'>Brisez le plafond de verre qui vous empêche de vous démarquer, vous avez envie de me présenter, ou simplement de dire bonjour ?, contactez moi via le formulaire de contact ou via mes différentes réseaux sociaux.</p>
         </div>
       <form onSubmit={handleSubmit} className="space-y-6 mt-6 w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -140,7 +140,7 @@ export default function ContactForm() {
 
         {status === 'error' && (
           <div className="p-4 bg-red-500/10 border border-red-500/20 text-red-600 dark:text-red-400 rounded-lg">
-            ✗ Une erreur s'est produite. Veuillez réessayer ou me contacter directement.
+            ✗ Une erreur s&apos;est produite. Veuillez réessayer ou me contacter directement.
           </div>
         )}
       </form>
