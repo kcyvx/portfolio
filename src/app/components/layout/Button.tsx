@@ -1,14 +1,12 @@
-import { ReactNode } from 'react';
+import { ReactNode, ButtonHTMLAttributes } from 'react';
 
-interface ButtonProps {
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
-  onClick?: () => void;
-  className?: string;
 }
 
-export default function Button({ children, onClick, className = '' }: ButtonProps) {
+export default function Button({ children, className = '', ...props }: ButtonProps) {
   return (
-    <button onClick={onClick} className={`btn-primary ${className}`}>
+    <button {...props} className={`btn-primary ${className}`}>
       {children}
     </button>
   );
